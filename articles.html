@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - XIAO PU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <div class="noise"></div>
+    
+    <!-- 返回按钮 -->
+    <header class="article-header">
+        <a href="index.html" class="back-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back
+        </a>
+    </header>
+
+    <main class="articles-container">
+        <!-- 精选文章区域 -->
+        <section class="featured-articles">
+            <h2 class="section-title">精选文章</h2>
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <!-- 文章卡片将通过 JavaScript 动态加载 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 文章列表区域 -->
+        <section class="article-list">
+            <h2 class="section-title">所有文章</h2>
+            <div class="article-table">
+                <div class="table-header">
+                    <div class="header-title">标题</div>
+                    <div class="header-reads">全网阅读量</div>
+                    <div class="header-date">发布时间</div>
+                </div>
+                <div class="table-body">
+                    <!-- 文章列表将通过 JavaScript 动态加载 -->
+                </div>
+                <div class="pagination">
+                    <button class="pagination-btn prev-page" disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="page-numbers">
+                        <span class="current-page">1</span>
+                        <span class="total-pages">/ 1</span>
+                    </div>
+                    <button class="pagination-btn next-page">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="articles-data.js"></script>
+    <script src="articles.js"></script>
+    <footer class="contact-footer">
+        <p class="contact-text" id="contact-text" data-clipboard="ZRP_010203">
+            可添加作者V：ZRP_010203
+            <span class="copy-tooltip">已复制！</span>
+        </p>
+    </footer>
+</body>
+</html> 
